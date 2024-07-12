@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Analysis</title>
+  </head>
+  <body>
+    <h1>Enter Text for Analysis</h1>
+    <form action="/analyze" method="post">
+      <textarea name="text" rows="10" cols="50"></textarea><br />
+      <label for="analysis_type">Choose analysis type:</label>
+      <select name="analysis_type">
+        <option value="Sentiment Analysis">Sentiment Analysis</option>
+        <option value="Named Entity Recognition">
+          Named Entity Recognition
+        </option>
+        <option value="Summarization">Summarization</option></select
+      ><br /><br />
+      <button type="submit">Analyze</button>
+    </form>
+  </body>
+</html>
